@@ -1,0 +1,73 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 500px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+#choice-buttons {
+    margin-top: 50%;
+    display: flex;
+    width: 100%;
+    gap: 15px;
+}
+
+#choice-buttons button {
+    flex: 1;
+    border: none;
+    border-radius: 20px;
+    font-size: 150px
+}
+
+#choice-buttons button:hover {
+    filter: brightness(90%);
+}
+
+#choice-buttons button:active {
+    filter: brightness(50%);
+    transform: scale(0.95);
+}
+
+#scoreboard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+
+#human-scoreboard,
+#computer-scoreboard {
+    flex-basis: 400px;
+    font-size: 20px;
+}
+
+#human-score,
+#computer-score {
+    font-size: 75px;
+}
+
+#results-display {
+    white-space: pre-line;
+    font-size: 28px;
+    width: 100%;
+}
+
+#btn-rock {
+    background-color: pink;
+}
+
+#btn-paper {
+    background-color: lightblue;
+}
+
+#btn-scissors {
+    background-color: lightgreen;
+}
